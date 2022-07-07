@@ -1,0 +1,18 @@
+//assign div1 to div array
+let div1 = document.querySelectorAll('div');
+
+setInterval(() => {
+//loop through div array and hide header item
+for (let i = 0; i < div1.length; i++) {
+    document.querySelector('.unban-requests-item-header-tab__banned-by-item').style.visibility = 'hidden'
+    //assign modAction to action in chat within loop
+    modAction = document.querySelectorAll('.targeted-mod-action');
+    for (let j = 0; j < modAction.length; j++) {
+    //loop through modAction and hide any action in chat
+        modAction[j].style.visibility = 'hidden'
+        
+    }
+    
+    
+    }
+}, 100);
